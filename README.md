@@ -1,1 +1,1 @@
-this repo is for hng internship project two. this repo is a movie app. it shows some default movies on the home page. it has a search functionality where movies an be searched.
+This repository is for hng internship task two. its a movie app that shows some default movies on the home page with a search functionality where movies an be searched.
