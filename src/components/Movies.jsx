@@ -20,7 +20,7 @@ const Movies = () => {
         );
         if (request.status === 200) {
           const data = request.data.results;
-          // console.log(data);
+          console.log(data);
           setMoviesList(data);
         } else {
           throw new Error("Request failed with status: " + response.status);
@@ -32,7 +32,7 @@ const Movies = () => {
     fetchMovies();
   }, []);
 
-  const displayMoviesUI = () => {
+  const movieUI = () => {
     const moviesListSelected = moviesList.slice(0, 10);
 
     if (moviesList === undefined || moviesList.length < 1) {
@@ -53,7 +53,7 @@ const Movies = () => {
         </p>
       </div>
       <ul className="grid grid-cols-5 grid-rows-2 gap-4">
-        {displayMoviesUI()}
+        {movieUI()}
       </ul>
 
       {/* <Routes>
