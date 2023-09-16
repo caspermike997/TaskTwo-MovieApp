@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
-import Spinner from "../components/Spinner";
+import Spinner from "../components/Spinner/Spinner";
 import tv from "../assets/tv.png";
 import home from "../assets/home.svg";
 import calendar from "../assets/calendar.svg";
 import camCorder from "../assets/camCorder.svg";
 import exit from "../assets/exit.svg";
 import televison from "../assets/televison.svg";
+
+
+
+
 
 const MovieDetails = () => {
   const API_KEY = "8e7a7d97fefd8b47be7bd7039b7aeb23";

@@ -1,5 +1,8 @@
 import React from "react";
-import tv from "../assets/tv.png";
+import tv from "../../assets/tv.png";
+
+
+
 
 const NavBar = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Poster from "../assets/Poster.png";
+import Poster from "../../assets/Poster.png"
 
 const HeroSection = () => {
   return (

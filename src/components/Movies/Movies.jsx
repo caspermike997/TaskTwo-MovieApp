@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Spinner from "./Spinner";
-import Movie from "./Movie";
+import Spinner from "../Spinner/Spinner";
+import MovieCard from "../MovieCard/MovieCard";
 
 const Movies = () => {
   const API_KEY = "8e7a7d97fefd8b47be7bd7039b7aeb23";
@@ -31,6 +31,7 @@ const Movies = () => {
     };
     fetchMovies();
   }, []);
+  
 
   const movieUI = () => {
     const moviesListSelected = moviesList.slice(0, 10);
@@ -39,11 +40,13 @@ const Movies = () => {
       return <Spinner />;
     } else {
       return moviesListSelected.map((movie, index) => {
-        return <Movie movie={movie} url={IMAGE_BASE_URL} key={index} />;
+        return <MovieCard movie={movie} url={IMAGE_BASE_URL} key={index} />;
       });
     }
   };
 
+
+  
   return (
     <div className="container pt-7">
       <div className="flex justify-between pt-3 pb-7">

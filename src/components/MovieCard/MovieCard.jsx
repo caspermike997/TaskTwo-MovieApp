@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Movie = ({ movie, url }) => {
+const MovieCard = ({ movie, url }) => {
   //   console.log(movie);
 
   const releaseDate = movie.release_date.split("-");
@@ -35,4 +35,4 @@ const Movie = ({ movie, url }) => {
   );
 };
 
-export default Movie;
+export default MovieCard;
