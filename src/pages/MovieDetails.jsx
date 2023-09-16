@@ -46,12 +46,9 @@ const MovieDetails = () => {
     selectedMovie;
   const releaseDate = release_date.split("-");
 
-  /* const newRunTime = (time) => {
-    const hour = Math.floor(time / 60);
-    const minutes = time % 60;
-    const result = `${hour}h-${minutes}m`;
-    return result;
-  }; */
+  
+
+
 
   const getGenres = genres.map((genre) => {
     return (
@@ -160,7 +157,7 @@ const MovieDetails = () => {
             </div>
           </div>
           <div className="right-details flex flex-col gap-4">
-            <div className="flex flex-col gap-4">
+            {/* <div className="flex flex-col gap-4">
               <div className="rating text-right">
                 <span>
                   <i className="fa-solid fa-star text-amber-300 mr-4"></i>
@@ -193,11 +190,9 @@ const MovieDetails = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
   );
 };
 
 export default MovieDetails;
 
-// style="background-image: url(&quot;https://image.tmdb.org/t/p/w500/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg&quot;);"
-// style="background-image: url(&quot;https://image.tmdb.org/t/p/w500/5mzr6JZbrqnqD8rCEvPhuCE5Fw2.jpg&quot;);"
