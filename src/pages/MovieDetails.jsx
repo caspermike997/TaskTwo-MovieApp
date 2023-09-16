@@ -49,7 +49,7 @@ const MovieDetails = () => {
   
 
 
-
+  
   const getGenres = genres.map((genre) => {
     return (
       <span
@@ -157,40 +157,7 @@ const MovieDetails = () => {
             </div>
           </div>
           <div className="right-details flex flex-col gap-4">
-            {/* <div className="flex flex-col gap-4">
-              <div className="rating text-right">
-                <span>
-                  <i className="fa-solid fa-star text-amber-300 mr-4"></i>
-                </span>
-                <span className="font-thin">8.5</span> | 350k
-              </div>
-              <div className="showtime bg-[#BE123C] py-2 px-3 rounded text-white">
-                <span>
-                  <i className="fa-sharp fa-solid fa-ticket mr-2"></i>
-                </span>
-                See Showtimes
-              </div>
-              <div className="watch-option bg-[#BE123C1A] py-2 px-3 rounded">
-                <span>
-                  <i className="fa-solid fa-list mr-2"></i>
-                </span>
-                More watch options
-              </div>
-            </div>
-            <div className=" w-[200px] h-[200px] bg-blue-400 rounded-md relative overflow-hidden">
-              <div className="absolute bottom-0 left-0 w-full h-8 bg-black text-white">
-                <span>
-                  <i className="fa-solid fa-list mr-2"></i>
-                </span>
-                <span className="text-[9px]">
-                  The Best Movies and Show in September
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> */}
+            
   );
 };
 
